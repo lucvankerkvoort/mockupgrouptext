@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+/*------------------------- Navbar--------------------- */
+.navbar {
+  display: flex;
+  height: 10vh;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px wheat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo p {
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-shadow: 1px 1px wheat;
+  width: 80%;
+}
+.navbar-items p {
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+/*------------------------- Homepage--------------------- */
+.homepage {
+  display: flex;
+  height: 90vh;
+  background: white;
+  margin: 0px;
+}
+
+.jumbotron {
+  display: flex;
+  height: 60vh;
+  width: 100%;
+  background: gray;
+  background-size: contain;
+  background-position: center;
+  justify-content: center;
+  color: white;
+  align-items: flex-end;
+}
+/*------------------------- Login & Register--------------------- */
+
+.wrapper {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 6px 6px 3px gray;
+  flex-direction: column;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  cursor: pointer;
+}
+/*------------------------- Help--------------------- */
+.Help {
+  background: red;
+  display: flex;
+  height: 100vh;
+  border: 2px solid black;
+  margin: 0px;
+}
+
+/*------------------------- Create a Group--------------------- */
+.CreateGroup {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 90vh;
+  background: white;
+  margin: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.addGroup {
+  position: relative;
+  margin-left: 20px;
+  cursor: pointer;
+  padding: 10px;
+  width: 120px;
+  box-shadow: 2px 2px 3px black;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.addGroup:active {
+  box-shadow: none;
+}
+.addedGroups {
+  display: flex;
+  flex-wrap: wrap;
+  height: 90vh;
+  width: 100%;
+}
+.groupElement {
+  height: 50vh;
+  margin: 10px;
+  width: 180px;
+  text-align: center;
+  box-shadow: 2px 2px 3px black;
+}
+/*------------------------- About--------------------- */
+.About {
+  display: flex;
+  height: 90vh;
+  border: 2px solid black;
+  background: gray;
+  margin: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+  .logo {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar-items {
+    font-size: 0.7em;
+    width: 100%;
+  }
+  .navbar-items p {
+    padding: 0 5px;
   }
 }
