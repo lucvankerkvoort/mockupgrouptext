@@ -1,6 +1,6 @@
 import React from "react";
 
-export let text = (title) => {
+let text = (title) => {
   return (
     <div className="text">
       <h2>{title}</h2>
@@ -33,3 +33,5 @@ export let text = (title) => {
     </div>
   );
 };
+
+export default text;
