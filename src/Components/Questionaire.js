@@ -31,6 +31,7 @@ class Questionaire extends React.Component {
     return (
       <div className="Questionaire">
         <form>
+          <h2>{localStorage.getItem("element")}</h2>
           {this.questions().map((element, i) => {
             return (
               <input

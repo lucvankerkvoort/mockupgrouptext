@@ -1,8 +1,15 @@
 import React from "react";
-import { navbarItems } from "./Navbar-items";
+import { navbarItems } from "./navbar-items";
 import { Link } from "react-router-dom";
+import history from "./history";
 
 class Navbar extends React.Component {
+  // location = (link) => {
+  //   console.log(link);
+  // link ? console.log("elementLink", link) : console.log(this.location());
+  // console.log(window.history.go(-1));
+  //   return link;
+  // };
   handleClick = (element) => {
     const { showElement } = this.props;
     if (element === "Login" || element === "Register") {
@@ -10,6 +17,7 @@ class Navbar extends React.Component {
       showElement(true);
     }
   };
+
   render() {
     return (
       <div className="navbar">

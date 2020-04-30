@@ -6,7 +6,6 @@ export let navbarItems = [
   },
   {
     name: "Login",
-    link: "",
   },
   {
     name: "Help",
@@ -18,6 +17,5 @@ export let navbarItems = [
   },
   {
     name: "Register",
-    link: "",
   },
 ];

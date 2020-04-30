@@ -18,12 +18,10 @@ class App extends React.Component {
   };
 
   handleInfo = (input) => {
-    console.log(input);
     this.setState({ input });
   };
 
   render() {
-    console.log(this.state);
     const { showElement } = this.state;
     return (
       <div className="App">
