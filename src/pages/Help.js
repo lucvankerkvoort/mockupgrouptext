@@ -1,5 +1,5 @@
 import React from "react";
-import { text } from "../Components/text";
+import { text } from "../Components/Text";
 
 class Help extends React.Component {
   render() {

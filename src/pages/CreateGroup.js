@@ -1,6 +1,6 @@
 import React from "react";
 import Modal from "../Components/Modal";
-import { member } from "../Components/questions";
+import { member } from "../Components/Questions";
 
 class CreateGroup extends React.Component {
   state = {

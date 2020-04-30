@@ -1,5 +1,5 @@
 import React from "react";
-import { login, register, group, member } from "./questions";
+import { login, register, group, member } from "./Questions";
 
 class Questionaire extends React.Component {
   state = {};
