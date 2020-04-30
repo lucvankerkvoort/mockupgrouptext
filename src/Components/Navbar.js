@@ -28,17 +28,25 @@ class Navbar extends React.Component {
         </div>
         <div className="navbar-items">
           {navbarItems.map((element, i) => {
-            return (
-              <Link
-                key={i}
-                to={element.link}
-                style={{ textDecoration: "none", color: "black" }}
-              >
+            if (element.name === "Login" || element.name === "Register") {
+              return (
                 <p key={i} onClick={() => this.handleClick(element.name)}>
                   {element.name}
                 </p>
-              </Link>
-            );
+              );
+            } else {
+              return (
+                <Link
+                  key={i}
+                  to={element.link}
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  <p key={i} onClick={() => this.handleClick(element.name)}>
+                    {element.name}
+                  </p>
+                </Link>
+              );
+            }
           })}
         </div>
       </div>
