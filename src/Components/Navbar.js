@@ -1,7 +1,6 @@
 import React from "react";
-import { navbarItems } from "./navbar-items";
+import navbarItems from "./Navbar-items";
 import { Link } from "react-router-dom";
-import history from "./history";
 
 class Navbar extends React.Component {
   // location = (link) => {

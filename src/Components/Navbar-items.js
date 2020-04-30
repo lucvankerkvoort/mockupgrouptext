@@ -1,4 +1,4 @@
-export let navbarItems = [
+let navbarItems = [
   { name: "Home", link: "/" },
   {
     name: "Create Group",
@@ -19,3 +19,5 @@ export let navbarItems = [
     name: "Register",
   },
 ];
+
+export default navbarItems;
