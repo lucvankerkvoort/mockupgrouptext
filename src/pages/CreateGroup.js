@@ -52,10 +52,11 @@ class CreateGroup extends React.Component {
                         placeholder={element.placeholder}
                         onChange={this.handleChange}
                       />
-                      <button onClick={this.handleClick}>Submit</button>
                     </form>
                   );
                 })}
+
+                <button onClick={this.handleClick}>Submit</button>
               </div>
             );
           })}
