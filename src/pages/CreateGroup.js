@@ -1,6 +1,6 @@
 import React from "react";
 import Modal from "../Components/Modal";
-import { member } from "../Components/Questions";
+import Group from "../Components/Group";
 
 class CreateGroup extends React.Component {
   state = {
@@ -9,8 +9,6 @@ class CreateGroup extends React.Component {
     showElement: false,
   };
 
-  handleChange = (e) => {};
-  handleClick = (e) => {};
   handleInfo = (input) => {
     this.setState((state) => {
       const groups = state.groups.concat(input);
@@ -22,7 +20,9 @@ class CreateGroup extends React.Component {
   showElement = (input) => {
     this.setState({ showElement: input });
   };
+
   render() {
+    console.log(this.state);
     const { showElement, groups } = this.state;
     return (
       <div className="CreateGroup">
@@ -38,27 +38,9 @@ class CreateGroup extends React.Component {
         >
           Add a Group +
         </div>
-        <div className="addedGroups">
+        <div id="addedGroups">
           {(groups || []).map((element, i) => {
-            return (
-              <div key={i} className="groupElement">
-                <h2>{element.groupName}</h2>
-                {member.map((element, i) => {
-                  return (
-                    <form>
-                      <input
-                        name={element.name}
-                        type={element.type}
-                        placeholder={element.placeholder}
-                        onChange={this.handleChange}
-                      />
-                    </form>
-                  );
-                })}
-
-                <button onClick={this.handleClick}>Submit</button>
-              </div>
-            );
+            return <Group key={i} groupName={element.groupName} />;
           })}
         </div>
       </div>
