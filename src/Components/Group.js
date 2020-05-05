@@ -1,5 +1,5 @@
 import React from "./node_modules/react";
-import Modal from "./Modal";
+import Modal from "./modal";
 class Group extends React.Component {
   state = {
     showElement: false,
