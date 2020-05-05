@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "./Components/Navbar";
+import Navbar from "./components/navbar";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Homepage from "./pages/Homepage";
-import Modal from "./Components/Modal";
-import Help from "./pages/Help";
-import About from "./pages/About";
-import CreateGroup from "./pages/CreateGroup";
+import Homepage from "./pages/homepage";
+import Modal from "./components/modal";
+import Help from "./pages/help";
+import About from "./pages/about";
+import CreateGroup from "./pages/createGroup";
 import "./App.css";
 
 class App extends React.Component {
@@ -19,6 +19,7 @@ class App extends React.Component {
 
   handleInfo = (input) => {
     this.setState({ input });
+    console.log("something");
   };
 
   render() {

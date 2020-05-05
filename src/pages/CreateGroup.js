@@ -10,6 +10,7 @@ class CreateGroup extends React.Component {
   };
 
   handleInfo = (input) => {
+    console.log(input);
     this.setState((state) => {
       const groups = state.groups.concat(input);
       return {
