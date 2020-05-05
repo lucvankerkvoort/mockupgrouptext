@@ -1,6 +1,6 @@
-import React from "./node_modules/react";
+import React from "react";
 import navbarItems from "./navbar-items";
-import { Link } from "./node_modules/react-router-dom";
+import { Link } from "react-router-dom";
 
 class Navbar extends React.Component {
   // location = (link) => {
