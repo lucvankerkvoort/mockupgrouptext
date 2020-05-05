@@ -54,12 +54,14 @@
   display: flex;
   position: absolute;
   top: 0px;
+  left: 0px;
   height: 100vh;
   width: 100%;
   position: fixed;
   background: rgba(0, 0, 0, 0.7);
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .screen {
@@ -128,11 +130,12 @@
   width: 100%;
 }
 
-/* Group */
+/*------------------------- Group--------------------- */
 
 #members {
 }
 .groupElement {
+  position: relative;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -147,6 +150,30 @@
 }
 .groupElement input {
   text-align: center;
+}
+
+.buttons-group {
+  position: absolute;
+  bottom: 5px;
+  display: flex;
+  width: 100%;
+}
+.buttons-group button {
+  width: 25%;
+  font-size: 0.7em;
+}
+.question {
+  position: absolute;
+  bottom: 50px;
+}
+.table-group {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 100%;
+  overflow-x: hidden;
+  top: 50px;
 }
 /*------------------------- About--------------------- */
 .About {

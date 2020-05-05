@@ -45,3 +45,11 @@ export let member = [
     placeholder: "Phone Number",
   },
 ];
+
+export let question = [
+  {
+    name: "question",
+    type: "text",
+    placeholder: "Question you would like to ask",
+  },
+];

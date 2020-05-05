@@ -1,5 +1,5 @@
 import React from "react";
-import { login, register, group, member } from "./Questions";
+import { login, register, group, member, question } from "./Questions";
 
 class Questionaire extends React.Component {
   state = {};
@@ -23,6 +23,8 @@ class Questionaire extends React.Component {
         return group;
       case "Member":
         return member;
+      case "Question":
+        return question;
       default:
         return localStorage.setItem("element", "");
     }
