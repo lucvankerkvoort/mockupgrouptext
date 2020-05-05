@@ -122,16 +122,31 @@
 }
 .addedGroups {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   height: 90vh;
   width: 100%;
 }
+
+/* Group */
+
+#members {
+}
 .groupElement {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
   height: 50vh;
   margin: 10px;
   width: 180px;
   text-align: center;
   box-shadow: 2px 2px 3px black;
+}
+.groupElement button {
+  width: 50%;
+}
+.groupElement input {
+  text-align: center;
 }
 /*------------------------- About--------------------- */
 .About {

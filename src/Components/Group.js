@@ -7,30 +7,38 @@ class Group extends React.Component {
   };
   handleClick = (e) => {
     e.preventDefault();
-    const members = document.getElementById("members");
-    let name = document.createElement("p");
+    const members =
+      e.target.previousElementSibling.previousElementSibling
+        .previousElementSibling;
+    let tableRow = document.createElement("tr");
+    let name = document.createElement("td");
     name.textContent = this.state.memberName;
-    let tel = document.createElement("p");
+    let tel = document.createElement("td");
     tel.textContent = this.state.telephoneNumber;
-    members.appendChild(name, tel);
+    tableRow.appendChild(name);
+    tableRow.appendChild(tel);
+    members.append(tableRow);
   };
   render() {
     const { groupName } = this.props;
     return (
       <div className="groupElement" id={groupName}>
         <h2>{groupName}</h2>
-        <div className="members" />
+        <table className="members">
+          <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+          </tr>
+        </table>
         {member.map((element, i) => {
           return (
-            <form key={i}>
-              <input
-                key={i}
-                name={element.name}
-                type={element.type}
-                placeholder={element.placeholder}
-                onChange={this.handleChange}
-              />
-            </form>
+            <input
+              key={i}
+              name={element.name}
+              type={element.type}
+              placeholder={element.placeholder}
+              onChange={this.handleChange}
+            />
           );
         })}
 
