@@ -22,7 +22,6 @@ class CreateGroup extends React.Component {
   };
 
   render() {
-    console.log(this.state);
     const { showElement, groups } = this.state;
     return (
       <div className="CreateGroup">
