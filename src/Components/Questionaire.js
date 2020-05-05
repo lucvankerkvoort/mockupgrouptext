@@ -1,4 +1,4 @@
-import React from "react";
+import React from "./node_modules/react";
 import { login, register, group, member, question } from "./Questions";
 
 class Questionaire extends React.Component {
